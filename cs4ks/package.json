@@ -1,0 +1,19 @@
+{
+  "name": "cs4ks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Brynn Rittenhouse",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "better-sqlite3": "^7.1.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "uuid": "^8.2.0"
+  }
+}

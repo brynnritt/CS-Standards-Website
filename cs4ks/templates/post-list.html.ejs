@@ -1,0 +1,15 @@
+<nav>
+  <h2>Posts</h2>
+  <ul>
+  <% posts.forEach((post) => { %>
+    <li>
+      <%= post.body %><br/>
+      Posted By: <%= post.author %><br/>
+      Posted On: <%= post.date %><br/>
+      
+      <a href="/forum/topics/<%= topic_id %>/posts/<%= post.post_id %>">
+        Read More
+      </a>
+  <% }); %>
+  </ul>
+</nav>

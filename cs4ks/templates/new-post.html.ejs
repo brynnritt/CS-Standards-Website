@@ -1,0 +1,8 @@
+<h2>New Forum Post</h2>
+<form method="POST" action="/forum/topics/<%=topic_id%>/posts">
+  <label>Topic: <%- subject %> </label><br><br>
+  <label>body</label>
+  <textarea name="body" rows="10" required></textarea>
+  
+  <input type="submit" value="Post"/>
+</form>

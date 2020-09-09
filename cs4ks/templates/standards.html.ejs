@@ -1,0 +1,38 @@
+<html>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kansas Computer Science Standards</title>
+        <link href="site.css" rel="stylesheet">
+    </header>
+    <body>
+      <h1>Kansas Computer Science Standards</h1>
+      <table class="container">
+        <tr>
+          <th>Identifier</th>
+          <th >Description</th>
+          <th class="header">Summary</th>
+          <th class="header">Concept</th>
+          <th class="header">Subconcept</th>
+          <th class="header">Practices</th>
+        </tr>
+        <% standards.forEach((standard) =>{ %>
+          <tr>
+            <td class="identifier"><%= standard.identifier%></td>
+            <td class="description"><%= standard.description%></td>
+            <td class="summary"><%= standard.summary%></td>
+            <td class="concept"><%= standard.concept%></td>
+            <td class="subconcept"><%= standard.subconcept%></td>
+            <td class="practices"><%= standard.practices%></td>
+            
+          </tr>  
+          <tr class="button-row">
+              <td class="button-space"><button class="more-button">more</button></td>
+              <td class="button-space"><button class="less-button">less</button></td>
+          </tr>
+        <% }) %>        
+      </table>
+      
+      <script src="standards.js"></script>
+      <script src="site.js"></script>
+    </body>
+</html>

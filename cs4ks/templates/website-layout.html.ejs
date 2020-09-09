@@ -1,0 +1,31 @@
+
+<html class="home-page">
+  <head>
+    <title>Computer Science for Kansas Organization</title>
+    <link href="/index.css" rel="stylesheet">
+  </head>
+  <div>
+    <header>
+      <h1>
+        Computer Science for Kansas Organization
+      </h1>
+    </header>
+    <ul class="nav_bar">
+        <li><a href="https://www.csteachers.org/">National CSTA organization</a></li>
+        <li><a href="/standards.html">Standards</a></li>
+        <li><a href="/forum/topics">Forum</a></li>
+        <% if(locals.user) { %>
+        <li> Welcome <%= user.email %>! </li>
+      <li><a href="/signout">Sign Out</a></li>
+         <% } else { %>
+         <li><a href="/forum/signin">Sign In</a></li>
+           <li><a href="/forum/signup">Sign Up</a></li>
+          <% } %>
+    </ul>
+    <div classname="body">
+      
+      <%- layout %>
+      
+    </div>
+  </div>
+</html>

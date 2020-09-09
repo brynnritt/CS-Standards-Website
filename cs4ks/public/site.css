@@ -1,0 +1,116 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+h1{
+  color: darkgray;
+  font-family: Helvetica;
+}
+
+
+.header-container > div > h2 {
+  font-weight: 500;
+  font-size: large;
+  color: white;
+  font-family: Helvetica;
+}
+
+
+.container .more_button, .less_button{
+  display: none;
+}
+
+.container h3{
+  display: none;
+}
+
+
+.button-row{
+  display: none;
+}
+
+
+
+@media (max-width: 550px){
+  .button-row{
+    display: block;
+  }
+  .more-button{
+    display: block;
+  }
+  .less-button{
+    display: none;
+  }
+  .container.visible .more-button{
+    display: none;
+  }
+  .container.visible .less-button{
+    display: inline;
+  }
+  
+  button-space{
+    border: none;
+  }
+
+  .container > div {
+    border : 1px solid lightgray;
+  }
+   
+  .container .concept{
+    display: none;
+  }
+  
+  .container .practices{
+    display: none;
+  }
+  
+  .container .summary{
+    display: none;
+  }
+  
+  .container .subconcept{
+    display: none;
+  }
+  
+  .container .header{
+    display: none;
+  }
+  
+  .container .description{
+    font-style: italic;
+    color: gray;
+  }
+  
+  .container.visible .subconcept{
+    display: block;
+    column-span: 2;
+  }
+  
+  .container.visible .practices{
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+    
+  .container.visible .description{
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  .container h3{
+    display: block;
+    font-size: 1.5 rem;
+    font-weight: 500;
+    color: gray;
+}
+  
+  
+  
+  
+
+
+
+
+

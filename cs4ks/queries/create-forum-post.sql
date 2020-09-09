@@ -1,0 +1,1 @@
+INSERT INTO forum_posts (body, forum_topic_id, user_id) VALUES (?,?,?);

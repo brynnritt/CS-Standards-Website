@@ -1,0 +1,46 @@
+<div>
+  <h1>Sign Up</h1>
+  <form method="POST">
+
+    <div class="error-message">
+      <%= errorMessage %>
+    </div>
+    <br>
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" required/>
+    
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" required/>
+    <br/><br/>
+    
+    <label for="organization">Organization:</label>
+    <input type="text" name="organization" required/>
+    <br/><br/>
+    
+    <label for="cars">Select a Role:</label>
+
+    <select name="role" id="role" required>
+      <option value="">None</option>
+      <option value="teacher">Teacher</option>
+      <option value="researcher">Researcher</option>
+      <option value="KSDE">KSDE</option>
+      <option value="universityLiason">University Liason</option>
+      <option value="other">Other</option>
+    </select>
+    <br/><br/>
+    
+    <label for="email">Email:</label>
+    <input type="text" name="email" required/>
+    <br/><br/>
+    
+    <label for="passsword">Password:</label>
+    <input type="password" name="password" required/>
+    <br/><br/>
+    
+    <label for="passwordConfirmation">Password Confirmation:</label>
+    <input type="password" name="passwordConfirmation" required/>
+    <br/><br/>
+    <input type="submit" value="Create Account"/>
+
+  </form>
+</div>

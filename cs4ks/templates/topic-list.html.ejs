@@ -1,0 +1,15 @@
+<nav>
+  <h2>Topics</h2>
+  <ul>
+  <% topics.forEach((topic) => { %>
+    <li>
+      <label>Topic: <%= topic.subject %></label><br/>
+      <label>Created By: <%= topic.creator %></label><br/>
+      <label>There are <%= topic.postCount %> posts in this topic</label><br/>
+      <label>Topic created on <%= topic.date %></label><br/>
+      <a href="/forum/topics/<%= topic.topic_id %>">
+        View Posts
+      </a>
+  <% }); %>
+  </ul>
+</nav>

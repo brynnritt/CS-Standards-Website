@@ -1,0 +1,100 @@
+h1 {
+  font-family: Helvetica;
+  color: lightslategray;
+  text-align: left;
+}
+
+.website_header h1 {
+  font-family: Helvetica;
+  color: lightslategray;
+  text-align: center;
+}
+
+.forum_header h1{
+  text-align: left;
+}
+
+.header h3{
+  text-align: left;
+}
+
+p {
+  font: helvetica;
+  color: black;
+  padding: 200px 100px;
+  background: lightslategray;
+  font-size: 25px;
+  margin: 0px;
+}
+
+a:link, a:visited {
+ 
+  color: (internal value);
+  text-decoration: underline;
+}
+
+header{
+  background: black;
+  padding: 20px 10px;
+}
+
+/*nav bar*/
+.nav_bar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+  padding: 20px;
+}
+
+.nav_bar li {
+  float: left;
+  padding: 0px;
+}
+
+.nav_bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav_bar li a:hover {
+  background-color: #111;
+}
+
+li a:hover {
+  background-color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+a:link {
+  text-decoration: none;
+}
